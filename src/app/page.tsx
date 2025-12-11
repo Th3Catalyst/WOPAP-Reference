@@ -10,8 +10,9 @@ import * as c from "./components/index";
 export default function Main() {
   useEffect(() => { 
     Collapsible();
-    initializeSearch(
-    );}, []);
+    initializeSearch();
+    console.log(c.PopulateTags());
+  }, []);
   return (
     
     <main>
@@ -24,51 +25,7 @@ export default function Main() {
         <div id="searchTagCon">
           <input type="text" placeholder="Tag Search" id="searchTag" onKeyUp={() => {wordSearch(document.getElementById('tagList')?.querySelectorAll('li'), true); tagSearch();}} />
         </div>
-        <ul id="tagList">
-          <c.TagElement tag="acroamatic abatement" />
-          <c.TagElement tag="allan mcinnis" />
-          <c.TagElement tag="clio" />
-          <c.TagElement tag="cryptomancy" />
-          <c.TagElement tag="daniil sokolsky" />
-          <c.TagElement tag="dougall deering" />
-          <c.TagElement tag="elizabeth crocker" />
-          <c.TagElement tag="frontispiece" />
-          <c.TagElement tag="giftschreiber" />
-          <c.TagElement tag="harry blank" />
-          <c.TagElement tag="ilse reynders" />
-          <c.TagElement tag="ipperwash crisis" />
-          <c.TagElement tag="lillian lillihammer" />
-          <c.TagElement tag="lys reynders" />
-          <c.TagElement tag="memetics" />
-          <c.TagElement tag="nexus 94" />
-          <c.TagElement tag="none" />
-          <c.TagElement tag="osat" />
-          <c.TagElement tag="panopticon crisis" />
-          <c.TagElement tag="paraline" />
-          <c.TagElement tag="placeholder" />
-          <c.TagElement tag="raynard watts" />
-          <c.TagElement tag="scp-5054-ex" />
-          <c.TagElement tag="scp-5056" />
-          <c.TagElement tag="scp-5109" />
-          <c.TagElement tag="scp-5238" />
-          <c.TagElement tag="scp-5243" />
-          <c.TagElement tag="scp-5281" />
-          <c.TagElement tag="scp-5382" />
-          <c.TagElement tag="scp-5756" />
-          <c.TagElement tag="scp-5866" />
-          <c.TagElement tag="scp-5956" />
-          <c.TagElement tag="scp-6500" />
-          <c.TagElement tag="schriftsteller" />
-          <c.TagElement tag="simpson centre" />
-          <c.TagElement tag="site 43" />
-          <c.TagElement tag="tatp" />
-          <c.TagElement tag="tad" />
-          <c.TagElement tag="the aag" />
-          <c.TagElement tag="the brothers" />
-          <c.TagElement tag="thilo zwist" />
-          <c.TagElement tag="vivian scout" />
-          <c.TagElement tag="wynn rydderech" />
-        </ul>
+        <c.PopulateTags />
       </div>
       <c.Timeline>
         <c.TimelineCollapsible year="1200">
