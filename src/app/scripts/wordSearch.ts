@@ -4,12 +4,13 @@ interface WordSearchProps {
 }
 
 export default function wordSearch(elements: NodeListOf<HTMLElement> | null = null, menu: boolean = false) {
-
+  const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
   elements = elements ? elements: document.querySelectorAll('[data-event]') as NodeListOf<HTMLElement>;
-  
+  let filter: string | string[]
+
   if (!menu) {
     let input = document.getElementById("search");
-    let filter = (input as HTMLInputElement).value.toUpperCase();
+    filter = (input as HTMLInputElement).value.toUpperCase();
     for (let i = 0; i < elements.length; i++) {
       (elements[i].parentNode as HTMLElement).style.display = "none";
       ((elements[i].parentNode as HTMLElement).previousElementSibling as HTMLElement).classList.remove("active");
@@ -17,30 +18,34 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
   } else {
     
     let input = document.getElementById("searchTag") as HTMLInputElement;
-    let filter = input.value.toUpperCase().split(',');
+    console.log("input", input);
+    filter = input.value.toUpperCase().split(',');
     filter = filter[filter.length - 1].trim();
-    console.log(filter);
+    
   }
-  for (i = 0; i < elements.length; i++) {
+  for (let i = 0; i < elements.length; i++) {
+    let txtValue: string | undefined;
     if (!menu) {
-      txtValue = elements[i].querySelector('div').querySelector('p').textContent || elements[i].querySelector('div').querySelector('p').innerText;
+      txtValue = elements[i].querySelector('div')?.querySelector('p')?.textContent || elements[i].querySelector('div')?.querySelector('p')?.innerText;
     } else {
-      txtValue = elements[i].querySelector('button').textContent || elements[i].querySelector('button').innerText;
+      txtValue = elements[i].querySelector('button')?.textContent || elements[i].querySelector('button')?.innerText;
     }
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      elements[i].style.display = "list-item";
-      if (!menu) {
-        elements[i].parentNode.style.display = "block";
-        elements[i].parentNode.previousElementSibling.classList.add("active");
+    if (txtValue) {
+      if (txtValue?.toUpperCase().indexOf(filter) > -1) {
+        elements[i].style.display = "list-item";
+        if (!menu) {
+          (elements[i].parentNode as HTMLElement).style.display = "block";
+          (elements[i].parentNode as HTMLElement).previousElementSibling?.classList.add("active");
+        }
+      } else {
+        elements[i].style.display = "none";
       }
-    } else {
-      elements[i].style.display = "none";
     }
   }
-  if (document.getElementById("search").value == "" && !menu) {
-    for (i = 0; i < events.length; i++) {
-      events[i].parentNode.style.display = "none";
-      events[i].parentNode.previousElementSibling.classList.remove("active");
+  if ((document.getElementById("search") as HTMLInputElement | null)?.value == "" && !menu) {
+    for (let i = 0; i < events.length; i++) {
+      (elements[i].parentNode as HTMLElement).style.display = "none";
+      (elements[i].parentNode as HTMLElement).previousElementSibling?.classList.remove("active");
       events[i].style.display = "list-item";
     }
   }
