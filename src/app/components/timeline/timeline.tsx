@@ -32,7 +32,7 @@ interface TimelineEventProps {
     date: string;
     year: string|number;
     tags?: string[]; 
-    children?: React.ReactNode;
+    children: React.ReactNode;
 }
 
 export function TimelineEvent( { date, year, tags, children }: TimelineEventProps) {

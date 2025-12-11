@@ -334,7 +334,7 @@ export default function Main() {
             <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> occurs for the first time. Mass containment breach in Acroamatic Abatement Facility AAF-D, killing eight staff members. SCP-001-A and -B, which caused the breach, are erased from reality.
           </c.TimelineEvent>
           <c.TimelineEvent date="SEP. 9" year="2002" tags={["scp-5056"]}>
-            <a href="https://scp-wiki.wikidot.com/scp-5056" target="_blank">SCP-5056</a> Manifests
+            <a href="https://scp-wiki.wikidot.com/scp-5056" target="_blank">SCP-5056</a> Manifests.
           </c.TimelineEvent>
           <c.TimelineYear year="2003" />
           <c.TimelineEvent date="SEP. 8" year="2003" tags={["scp-5243"]}>
