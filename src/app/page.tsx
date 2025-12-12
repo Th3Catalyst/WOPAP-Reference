@@ -11,7 +11,6 @@ export default function Main() {
   useEffect(() => { 
     Collapsible();
     initializeSearch();
-    console.log(c.PopulateTags());
   }, []);
   return (
     
@@ -25,7 +24,7 @@ export default function Main() {
         <div id="searchTagCon">
           <input type="text" placeholder="Tag Search" id="searchTag" onKeyUp={() => {wordSearch(document.getElementById('tagList')?.querySelectorAll('li'), true); tagSearch();}} />
         </div>
-        <c.PopulateTags />
+        
       </div>
       <c.Timeline>
         <c.TimelineCollapsible year="1200">

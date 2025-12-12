@@ -31,6 +31,6 @@ export default function initializeSearch() {
         }, 20);
     }, { once: true 
     });});
-    document.getElementById("searchTagCon")?.addEventListener("click", (e) => {
-    document.getElementById("searchTag")?.focus(
+    document.getElementById("searchTagCon")!.addEventListener("click", (e) => {
+    document.getElementById("searchTag")!.focus(
 );});}
