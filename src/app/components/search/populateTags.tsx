@@ -2,7 +2,6 @@
 import React, { JSX, SetStateAction, useEffect, useState } from "react";
 import TagElement from "./tagSearch";
 
-
 function getTags() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -30,15 +29,16 @@ function getTags() {
 
 export default function PopulateTags() {
   const [tagInfo, setTags] = useState({});
-
+  
+  
   useEffect(() => {
     getTags()
     .then(tagInfo =>
       setTags(tagInfo as SetStateAction<{}>)
-    );
+    ); 
    }, [])
   
   return (
-    <>{tagInfo.tags}</>
+    <>{(tagInfo as { tags: JSX.Element[] }).tags}</>
   )
 }
