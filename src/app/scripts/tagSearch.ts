@@ -16,8 +16,24 @@ export default function tagSearch() {
         events[i].style.display = "list-item";
         (events[i].parentNode as HTMLElement).style.display = "block";
         ((events[i].parentNode as HTMLElement).previousElementSibling as HTMLElement).classList.add("active");
+        let prevElement = (events[i] as HTMLElement).previousElementSibling
+        while (prevElement) {
+          if (prevElement.querySelector("p")) {
+            prevElement.style.display = "list-item";
+            break
+          }
+          prevElement = prevElement.previousElementSibling
+        }
       } else {
         events[i].style.display = "none";
+        let prevElement = (events[i] as HTMLElement).previousElementSibling
+        while (prevElement) {
+          if (prevElement.querySelector("p")) {
+            prevElement.style.display = "none";
+            break
+          }
+          prevElement = prevElement.previousElementSibling
+        }
       }
     } else {
       events[i].style.display = "none";

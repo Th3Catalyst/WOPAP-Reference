@@ -205,11 +205,11 @@ export default function Main() {
             Dr. Euler convinces PoI-922 ("Andy Warhol") to create a visual representation of <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">the Frontispiece</a> for use in countries which do not employ the Latin alphabet.
           </c.TimelineEvent>
           <c.TimelineYear year="1979" />
-          <c.TimelineEvent date="MAY 22" year="1979" tags={["giftschreiber", "memetics", "SCP-5054-ex"]}>
+          <c.TimelineEvent date="MAY 22" year="1979" tags={["giftschreiber", "memetics", "scp-5054-ex"]}>
             <a href="https://scp-wiki.wikidot.com/scp-5054-ex" target="_blank">Giftschreiber</a> interfere memetically with the Canadian federal election.
           </c.TimelineEvent>
-          <c.TimelineEvent date="MAY 25" year="1979" tags={["SCP-5054-ex"]}>
-            Operation SHADOWPLAY creates fictional Prime Minister Joe Clark (<a href="https://scp-wiki.wikidot.com/scp-5054-ex" target="_blank">SCP-5054-EX</a>).
+          <c.TimelineEvent date="MAY 25" year="1979" tags={["scp-5054-ex"]}>
+            Operation SHADOWPLAY creates fictional Prime Minister Joe Clark (<a href="https://scp-wiki.wikidot.com/scp-5054-ex" target="_blank">scp-5054-EX</a>).
           </c.TimelineEvent>
           <c.TimelineEvent date="JUL. 3" year="1979" tags={["allan mcinnis"]}>
             <a href="https://scp-wiki.wikidot.com/scp-5379" target="_blank">A.J. McInnis joins</a> the SCP Foundation.

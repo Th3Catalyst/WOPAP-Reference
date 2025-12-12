@@ -6,21 +6,20 @@ function getTags() {
   return new Promise((resolve) => {
     setTimeout(() => {
       let returnVal = <p>loading1...</p>
-      if (document ?? 0) {returnVal = <p>loading2...</p>} else {
-        const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
-        let allTags: string[] = [];
+      const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
+        const allTags: string[] = [];
 
-        for (let timeEvent of events) {
-          let tags = timeEvent.getAttribute("data-tags")?.split(",")
+        for (const timeEvent of events) {
+          const tags = timeEvent.getAttribute("data-tags")?.split(",")
           if (!tags) {return}
-          for (let tag of tags) {
-              if (!(tag in allTags)) {
+          for (const tag of tags) {
+              if (!allTags.includes(tag)) {
                 allTags.push(tag)
               }
           }
+          allTags.sort()
         }
-        returnVal = allTags.map(tag => <TagElement tag={tag} />)
-      }
+        returnVal = allTags.map(tag => <TagElement key={tag} tag={tag} />)
       resolve({
         tags: returnVal
       })
