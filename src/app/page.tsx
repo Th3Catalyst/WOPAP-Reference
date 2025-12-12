@@ -139,7 +139,7 @@ export default function Main() {
             <a href="https://scp-wiki.wikidot.com/dead-dogs-magic-mounties" target="_blank">Provisional Site-43</a> completed.
           </c.TimelineEvent>
           <c.TimelineEvent date="DEC. 31" year="1943" tags={["ilse reynders"]}>
-            <a href="https://scp-wiki.wikidot.com/over-time-hub" target="_blank">Dr. Ilse Reynders</a> gets trapped in AAF-A's <a href="https://scp-wiki.wikidot.com/scp-5616" target="_blank">Anomalous Documents Disposal Chamber.</a>
+            <a href="https://scp-wiki.wikidot.com/over-time-hub" target="_blank">Dr. Ilse Reynders</a> gets trapped in AAF-A&apos;s <a href="https://scp-wiki.wikidot.com/scp-5616" target="_blank">Anomalous Documents Disposal Chamber.</a>
           </c.TimelineEvent>
         </c.TimelineCollapsible>
         <c.TimelineCollapsible year="1960">
@@ -165,29 +165,29 @@ export default function Main() {
           </c.TimelineEvent>
           <c.TimelineYear year="1968" />
           <c.TimelineEvent date="JAN. 3" year="1968" tags={["site 43", "panopticon crisis"]}>
-            The Canadian government <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">revokes the Foundation's right</a> to operate Site-43.
+            The Canadian government <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">revokes the Foundation&apos;s right</a> to operate Site-43.
           </c.TimelineEvent>
           <c.TimelineEvent date="JAN. 7" year="1968" tags={["osat", "site 43"]}>
             <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">OSAT</a> fails to breach Site-43.
           </c.TimelineEvent>
           <c.TimelineEvent date="MAR. 12" year="1968" tags={["thilo zwist", "cryptomancy", "frontispiece"]}>
-            Dr. Izaak Okorie meets <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">Thilo Zwist</a>, who fashions a cryptomantic shield for the use of a new front company: <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Scout's Cargo Packing.</a>
+            Dr. Izaak Okorie meets <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">Thilo Zwist</a>, who fashions a cryptomantic shield for the use of a new front company: <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Scout&apos;s Cargo Packing.</a>
           </c.TimelineEvent>
           <c.TimelineEvent date="MAY ??" year="1968" tags={["elizabeth crocker", "panopticon crisis", "thilo zwist", "cryptomancy"]}>
-            <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Elizabeth Crocker</a> attacks a convoy utilizing <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">Zwist's</a> cryptomancy.
+            <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Elizabeth Crocker</a> attacks a convoy utilizing <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">Zwist&apos;s</a> cryptomancy.
           </c.TimelineEvent>
           <c.TimelineEvent date="JUL. 2" year="1968" tags={["elizabeth crocker", "panopticon crisis"]}>
             Site-03 Director Abrasha Sokolsky expelled from Soviet Union by <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Crocker.</a>
           </c.TimelineEvent>
           <c.TimelineEvent date="SEP. 3" year="1968" tags={["ilse reynders", "cryptomancy", "frontispiece"]}>
-            Drs. Arik Euler, Izaak Okorie and <a href="https://scp-wiki.wikidot.com/scp-5616" target="_blank">Ilse Reynders</a> identify <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank"><i>linguanons</i></a>, the anomalous particles which allow <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">Zwist's</a> cryptomancy to operate.
+            Drs. Arik Euler, Izaak Okorie and <a href="https://scp-wiki.wikidot.com/scp-5616" target="_blank">Ilse Reynders</a> identify <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank"><i>linguanons</i></a>, the anomalous particles which allow <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">Zwist&apos;s</a> cryptomancy to operate.
           </c.TimelineEvent>
           <c.TimelineEvent date="SEP. 15" year="1968" tags={["cryptomancy", "frontispiece"]}>
             The first Foundation-made cryptomancy is applied to signage for a new front company, the <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Shell Construction Partnership.</a>
           </c.TimelineEvent>
           <c.TimelineYear year="1969" />
           <c.TimelineEvent date="FEB. 17" year="1969" tags={["frontispiece", "cryptomancy", "ilse reynders"]}>
-            Drs. Euler, Okorie and <a href="https://scp-wiki.wikidot.com/scp-5616" target="_blank">Reynders</a> propose creating "<a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">The Frontispiece</a>," a piece of thaumaturgy transforming the initialism SCP into a cryptomantic shield. Their proposal is accepted by the O5 Council.
+            Drs. Euler, Okorie and <a href="https://scp-wiki.wikidot.com/scp-5616" target="_blank">Reynders</a> propose creating &quot;<a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">The Frontispiece</a>,&quot; a piece of thaumaturgy transforming the initialism SCP into a cryptomantic shield. Their proposal is accepted by the O5 Council.
           </c.TimelineEvent>
           <c.TimelineEvent date="JUL. 4" year="1969" tags={["elizabeth crocker", "panopticon crisis", "site 43"]}>
             <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Elizabeth Crocker</a> attacks Site-43.
@@ -202,7 +202,7 @@ export default function Main() {
             The <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Panopticon Crisis</a> ends. Dr. Euler founds the Mimesis and Cryptomancy Section (now Memetics and Countermemetics) at Site-43.
           </c.TimelineEvent>
           <c.TimelineEvent date="AUG. ??" year="1971" tags={["frontispiece", "cryptomancy"]}>
-            Dr. Euler convinces PoI-922 ("Andy Warhol") to create a visual representation of <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">the Frontispiece</a> for use in countries which do not employ the Latin alphabet.
+            Dr. Euler convinces PoI-922 (&quot;Andy Warhol&quot;) to create a visual representation of <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">the Frontispiece</a> for use in countries which do not employ the Latin alphabet.
           </c.TimelineEvent>
           <c.TimelineYear year="1979" />
           <c.TimelineEvent date="MAY 22" year="1979" tags={["giftschreiber", "memetics", "scp-5054-ex"]}>
@@ -226,7 +226,7 @@ export default function Main() {
           </c.TimelineEvent>
           <c.TimelineYear year="1987" />
           <c.TimelineEvent date="????" year="1987" tags={["none"]}>
-            <a href="https://scp-wiki.wikidot.com/are-we-cool-yet-hub" target="_blank">Are We Cool Yet?</a> formed by former members of <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">PoI-922's workshop.</a>
+            <a href="https://scp-wiki.wikidot.com/are-we-cool-yet-hub" target="_blank">Are We Cool Yet?</a> formed by former members of <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">PoI-922&apos;s workshop.</a>
           </c.TimelineEvent>
         </c.TimelineCollapsible>
         <c.TimelineCollapsible year="1990">
@@ -236,7 +236,7 @@ export default function Main() {
           </c.TimelineEvent>
           <c.TimelineYear year="1992" />
           <c.TimelineEvent date="NOV. 9" year="1992" tags={["scp-5281"]}>
-            <a href="https://scp-wiki.wikidot.com/scp-5281" target="_blank">SCP-5281</a>, a child-eating phantom, is "contained" at Site-43.
+            <a href="https://scp-wiki.wikidot.com/scp-5281" target="_blank">SCP-5281</a>, a child-eating phantom, is &quot;contained&quot; at Site-43.
           </c.TimelineEvent>
           <c.TimelineYear year="1993" />
           <c.TimelineEvent date="MAY ??" year="1993" tags={["nexus 94"]}>

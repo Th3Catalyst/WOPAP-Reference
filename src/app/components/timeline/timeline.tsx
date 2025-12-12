@@ -49,7 +49,7 @@ export function TimelineEvent( { date, year, tags, children }: TimelineEventProp
     );
 }
 
-export default function Timeline({ children }: React.PropsWithChildren<{}>) {
+export default function Timeline({ children }: React.PropsWithChildren<unknown>) {
     return (
         <ul>{ children }</ul>
     );

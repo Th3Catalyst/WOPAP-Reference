@@ -12,7 +12,7 @@ export default function addTag({tag}: AddTagProps) {
 
   
 
-  let input: HTMLInputElement | null = document.getElementById("searchTag") as HTMLInputElement | null;
+  const input: HTMLInputElement | null = document.getElementById("searchTag") as HTMLInputElement | null;
   if (input) {
     input.value = "";
     if (tags.includes(tag)) {
@@ -20,13 +20,13 @@ export default function addTag({tag}: AddTagProps) {
     } else {
       tags.push(tag);
     }
-    let newtag = document.createElement("div");
+    const newtag = document.createElement("div");
     document.getElementById("searchTagCon")?.appendChild(newtag);
     newtag.innerText = tag;
     newtag.classList.add("tag");
     document.getElementById("searchTagCon")?.appendChild(input);
 
-    let tagElements = document.getElementsByClassName("tag");
+    const tagElements = document.getElementsByClassName("tag");
     for (let j = 0; j < tagElements.length; j++) {
       tagElements[j].addEventListener("click", (e) => {
         (e.target as HTMLElement)?.remove();

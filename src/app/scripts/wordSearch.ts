@@ -1,7 +1,3 @@
-interface WordSearchProps {
-    elements?: NodeListOf<HTMLElement>;
-    menu?: boolean;
-}
 
 export default function wordSearch(elements: NodeListOf<HTMLElement> | null = null, menu: boolean = false) {
   const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
@@ -9,7 +5,7 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
   let filter: string | string[]
 
   if (!menu) {
-    let input = document.getElementById("search");
+    const input = document.getElementById("search");
     filter = (input as HTMLInputElement).value.toUpperCase();
     for (let i = 0; i < elements.length; i++) {
       (elements[i].parentNode as HTMLElement).style.display = "none";
@@ -17,7 +13,7 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
     }
   } else {
     
-    let input = document.getElementById("searchTag") as HTMLInputElement;
+    const input = document.getElementById("searchTag") as HTMLInputElement;
     console.log("input", input);
     filter = input.value.toUpperCase().split(',');
     filter = filter[filter.length - 1].trim();

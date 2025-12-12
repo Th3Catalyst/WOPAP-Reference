@@ -6,12 +6,12 @@ export default function tagSearch() {
     (events[i].parentNode as HTMLElement).style.display = "none";
     ((events[i].parentNode as HTMLElement).previousElementSibling as HTMLElement).classList.remove("active");
   }
-  let enabledTags = tags;
+  const enabledTags = tags;
   console.log(enabledTags);
   for (let i = 0; i < events.length; i++) {
-    let tags = events[i].getAttribute("data-tags");
+    const tags = events[i].getAttribute("data-tags");
     if (tags) {
-      let tagList = tags.split(',').map(tag => tag.trim().toLowerCase());
+      const tagList = tags.split(',').map(tag => tag.trim().toLowerCase());
       if (tagList.some(element => enabledTags.includes(element))) {
         events[i].style.display = "list-item";
         (events[i].parentNode as HTMLElement).style.display = "block";
@@ -19,7 +19,7 @@ export default function tagSearch() {
         let prevElement = (events[i] as HTMLElement).previousElementSibling
         while (prevElement) {
           if (prevElement.querySelector("p")) {
-            prevElement.style.display = "list-item";
+            (prevElement as HTMLElement).style.display = "list-item";
             break
           }
           prevElement = prevElement.previousElementSibling
@@ -29,7 +29,7 @@ export default function tagSearch() {
         let prevElement = (events[i] as HTMLElement).previousElementSibling
         while (prevElement) {
           if (prevElement.querySelector("p")) {
-            prevElement.style.display = "none";
+            (prevElement as HTMLElement).style.display = "none";
             break
           }
           prevElement = prevElement.previousElementSibling

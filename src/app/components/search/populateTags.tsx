@@ -34,11 +34,12 @@ export default function PopulateTags() {
   useEffect(() => {
     getTags()
     .then(tagInfo =>
+      // eslint-disable-next-line @typescript-eslint/no-empty-object-type
       setTags(tagInfo as SetStateAction<{}>)
     ); 
-   }, [])
+   }, []);
   
   return (
     <>{(tagInfo as { tags: JSX.Element[] }).tags}</>
-  )
+  );
 }
