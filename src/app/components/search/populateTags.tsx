@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { JSX, SetStateAction, useEffect, useState } from "react";
 import TagElement from "./tagSearch";
+
 
 function getTags() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      let returnVal: React.ReactElement<any,any> = <p>loading1...</p>
+      let returnVal: JSX.Element[] = [];
       const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
       const allTags: string[] = [];
 
@@ -32,8 +33,8 @@ export default function PopulateTags() {
 
   useEffect(() => {
     getTags()
-    .then(data =>
-      setTags(data)
+    .then(tagInfo =>
+      setTags(tagInfo as SetStateAction<{}>)
     );
    }, [])
   
