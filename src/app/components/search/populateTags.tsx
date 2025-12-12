@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import TagElement from "./tagSearch";
 
 function getTags() {
@@ -19,7 +19,7 @@ function getTags() {
           }
           allTags.sort()
         }
-        returnVal = allTags.map(tag => <TagElement key={tag} tag={tag} />)
+        returnVal: React.ReactElement[] = allTags.map(tag => <TagElement key={tag} tag={tag} />)
       resolve({
         tags: returnVal
       })
