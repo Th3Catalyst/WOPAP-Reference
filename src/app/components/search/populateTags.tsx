@@ -5,21 +5,21 @@ import TagElement from "./tagSearch";
 function getTags() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      let returnVal = <p>loading1...</p>
+      let returnVal: React.ReactElement<any,any> = <p>loading1...</p>
       const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
-        const allTags: string[] = [];
+      const allTags: string[] = [];
 
-        for (const timeEvent of events) {
-          const tags = timeEvent.getAttribute("data-tags")?.split(",")
-          if (!tags) {return}
-          for (const tag of tags) {
-              if (!allTags.includes(tag)) {
-                allTags.push(tag)
-              }
-          }
-          allTags.sort()
+      for (const timeEvent of events) {
+        const tags = timeEvent.getAttribute("data-tags")?.split(",")
+        if (!tags) {return}
+        for (const tag of tags) {
+            if (!allTags.includes(tag)) {
+              allTags.push(tag)
+            }
         }
-        returnVal: React.ReactElement[] = allTags.map(tag => <TagElement key={tag} tag={tag} />)
+        allTags.sort()
+      }
+      returnVal = allTags.map(tag => <TagElement key={tag} tag={tag} />)
       resolve({
         tags: returnVal
       })
