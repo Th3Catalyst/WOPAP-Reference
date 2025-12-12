@@ -24,7 +24,7 @@ export default function Main() {
         <div id="searchTagCon">
           <input type="text" placeholder="Tag Search" id="searchTag" onKeyUp={() => {wordSearch(document.getElementById('tagList')?.querySelectorAll('li'), true); tagSearch();}} />
         </div>
-        
+        <ul id ="tagList"><c.PopulateTags /></ul>
       </div>
       <c.Timeline>
         <c.TimelineCollapsible year="1200">

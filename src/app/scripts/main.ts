@@ -5,9 +5,9 @@ import { tags } from "./addTag";
 export default function initializeSearch() {
     const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
 
-    document.getElementById("searchTag")?.addEventListener("focus", (e) => {
+    document.getElementById("searchTag")?.addEventListener("focus", () => {
         wordSearch((document.getElementById('tagList') as HTMLElement).querySelectorAll('li'), true);
-        let input: HTMLInputElement | null = document.getElementById("searchTag") as HTMLInputElement | null;
+        const input: HTMLInputElement | null = document.getElementById("searchTag") as HTMLInputElement | null;
         if (input) {
             setTimeout(() => { input.selectionStart = input.selectionEnd = 10000; }, 0);
             if (document.getElementById("tagList") as HTMLElement) { 
@@ -17,8 +17,8 @@ export default function initializeSearch() {
         }
     });
 
-    document.getElementById("searchTag")?.addEventListener("blur", (e) => {
-    document.addEventListener("mouseup", (e) => {
+    document.getElementById("searchTag")?.addEventListener("blur", () => {
+    document.addEventListener("mouseup", () => {
         setTimeout(() => {
             if (document.getElementById("tagList") as HTMLElement) {
                 (document.getElementById("tagList") as HTMLElement).style.display = "none";
@@ -31,6 +31,6 @@ export default function initializeSearch() {
         }, 20);
     }, { once: true 
     });});
-    document.getElementById("searchTagCon")!.addEventListener("click", (e) => {
+    document.getElementById("searchTagCon")!.addEventListener("click", () => {
     document.getElementById("searchTag")!.focus(
 );});}
