@@ -305,6 +305,10 @@ export default function Main() {
           <c.TimelineEvent date="SEP. 8" year="2003" tags={["scp-5243"]}>
             <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the first time. Unstable alternate timeline created (Deadline A: Playing Gods).
           </c.TimelineEvent>
+          <c.TimelineYear year="2004" />
+          <c.TimelineEvent date="SEP. 11" year="2004" tags={["wynn rydderech", "udo okorie", "jessie rivera", "eileen veiksaar", "ilse reynders"]}>
+            Udo Okorie, Jessie Rivera, and Eileen Veiksaar commuicate with Wynn Rydderech and he <a href="https://scp-wiki.wikidot.com/40-waiting-to-happen" target="_blank">delivers a cryptic message about Ilse Reynders</a> .
+          </c.TimelineEvent>
           <c.TimelineYear year="2007" />
           <c.TimelineEvent date="SEP. 8" year="2007" tags={["scp-5243"]}>
             <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the fifth time. Unstable alternate timeline created (Deadline B: The World Wide Web).
