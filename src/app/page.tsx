@@ -201,6 +201,9 @@ export default function Main() {
           <c.TimelineEvent date="????" year="1971" tags={["panopticon crisis", "memetics", "cryptomancy"]}>
             The <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">Panopticon Crisis</a> ends. Dr. Euler founds the Mimesis and Cryptomancy Section (now Memetics and Countermemetics) at Site-43.
           </c.TimelineEvent>
+          <c.TimelineEvent date="????" year="1971" tags={["memetics","norman wilkinson"]}>
+            The Memetics & Countermemetics uniforms are designed by <a href="https://scp-wiki.wikidot.com/9-transition" target="_blank">protomemeticist Norman Wilkinson.</a>
+          </c.TimelineEvent>
           <c.TimelineEvent date="AUG. ??" year="1971" tags={["frontispiece", "cryptomancy"]}>
             Dr. Euler convinces PoI-922 (&quot;Andy Warhol&quot;) to create a visual representation of <a href="https://scp-wiki.wikidot.com/pickman-blank-proposal" target="_blank">the Frontispiece</a> for use in countries which do not employ the Latin alphabet.
           </c.TimelineEvent>
@@ -280,7 +283,7 @@ export default function Main() {
         <c.TimelineCollapsible year="2000">
           <c.TimelineYear year="2000" />
           <c.TimelineEvent date="MAY 5" year="2000" tags={["lillian lillihammer", "wynn rydderech"]}>
-            Lillihammer meets Rydderech, and he delivers to her <a href="https://scp-wiki.wikidot.com/9-transition" target="_blank">a cryptic message.</a>
+            Lillihammer meets Rydderech, and he delivers to her <a href="https://scp-wiki.wikidot.com/9-transition" target="_blank">a cryptic message,</a> which is different in <a href="https://scp-wiki.wikidot.com/22-borrowing-trouble" target="_blank">-A</a>, <a href="https://scp-wiki.wikidot.com/44-next-to-nothing" target="_blank">-C</a>, <a href="https://scp-wiki.wikidot.com/53-those-who-cant" target="_blank">-D</a>, <a href="https://scp-wiki.wikidot.com/56-this-forgotten-babylon" target="_blank">-E</a>, and two other times.
           </c.TimelineEvent>
           <c.TimelineYear year="2002" />
           <c.TimelineEvent date="MAY 5" year="2002" tags={["placeholder"]}>
@@ -294,6 +297,9 @@ export default function Main() {
           </c.TimelineEvent>
           <c.TimelineEvent date="SEP. 9" year="2002" tags={["udo okorie", "stacey laiken"]}>
             <a href="https://scp-wiki.wikidot.com/4-granularity" target="_blank">Stacey Laiken and Udo Okorie</a> meet outside the tool-assisted nadirosis chamber.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 9" year="2002" tags={["udo okorie", "tad", "dougall deering"]}>
+            Udo receives <a href="https://scp-wiki.wikidot.com/5-the-mourning-after" target="_blank">a message from the TAD</a> regarding Dougall's death.
           </c.TimelineEvent>
           <c.TimelineYear year="2003" />
           <c.TimelineEvent date="SEP. 8" year="2003" tags={["scp-5243"]}>
