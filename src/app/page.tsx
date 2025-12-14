@@ -292,6 +292,9 @@ export default function Main() {
           <c.TimelineEvent date="SEP. 9" year="2002" tags={["scp-5056"]}>
             <a href="https://scp-wiki.wikidot.com/scp-5056" target="_blank">SCP-5056</a> Manifests.
           </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 9" year="2002" tags={["udo okorie", "stacey laiken"]}>
+            <a href="https://scp-wiki.wikidot.com/4-granularity" target="_blank">Stacey Laiken and Udo Okorie</a> meet outside the tool-assisted nadirosis chamber.
+          </c.TimelineEvent>
           <c.TimelineYear year="2003" />
           <c.TimelineEvent date="SEP. 8" year="2003" tags={["scp-5243"]}>
             <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the first time. Unstable alternate timeline created (Deadline A: Playing Gods).
