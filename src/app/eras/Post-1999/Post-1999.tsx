@@ -1,0 +1,130 @@
+import * as c from "../../components/index"
+
+export default function Post1999() {
+	return (
+		<>
+			<c.TimelineCollapsible year="2000">
+          <c.TimelineYear year="2000" />
+          <c.TimelineEvent date="MAY 5" year="2000" tags={["lillian lillihammer", "wynn rydderech"]}>
+            Lillihammer meets Rydderech, and he delivers to her <a href="https://scp-wiki.wikidot.com/9-transition" target="_blank">a cryptic message,</a> which is different in <a href="https://scp-wiki.wikidot.com/22-borrowing-trouble" target="_blank">-A</a>, <a href="https://scp-wiki.wikidot.com/44-next-to-nothing" target="_blank">-C</a>, <a href="https://scp-wiki.wikidot.com/53-those-who-cant" target="_blank">-D</a>, <a href="https://scp-wiki.wikidot.com/56-this-forgotten-babylon" target="_blank">-E</a>, and two other times.
+          </c.TimelineEvent>
+          <c.TimelineYear year="2002" />
+          <c.TimelineEvent date="MAY 5" year="2002" tags={["placeholder"]}>
+            Dr. Nathan Valis suffers an identity abstraction, becoming <a href="https://scp-wiki.wikidot.com/scp-5242" target="_blank">Dr. Placeholder McDoctorate.</a>
+          </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 8" year="2002" tags={["scp-5243", "the brothers", "acroamatic abatement"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> occurs for the first time. Mass containment breach in Acroamatic Abatement Facility AAF-D, killing eight staff members. SCP-001-A and -B, which caused the breach, are erased from reality.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 9" year="2002" tags={["scp-5056"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5056" target="_blank">SCP-5056</a> Manifests.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 9" year="2002" tags={["udo okorie", "stacey laiken"]}>
+            <a href="https://scp-wiki.wikidot.com/4-granularity" target="_blank">Stacey Laiken and Udo Okorie</a> meet outside the tool-assisted nadirosis chamber.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 9" year="2002" tags={["udo okorie", "tad", "dougall deering"]}>
+            Udo receives <a href="https://scp-wiki.wikidot.com/5-the-mourning-after" target="_blank">a message from the TAD</a> regarding Dougall's death.
+          </c.TimelineEvent>
+          <c.TimelineYear year="2003" />
+          <c.TimelineEvent date="SEP. 8" year="2003" tags={["scp-5243"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the first time. Unstable alternate timeline created (Deadline A: Playing Gods).
+          </c.TimelineEvent>
+          <c.TimelineYear year="2004" />
+          <c.TimelineEvent date="SEP. 11" year="2004" tags={["wynn rydderech", "udo okorie", "jessie rivera", "eileen veiksaar", "ilse reynders"]}>
+            Udo Okorie, Jessie Rivera, and Eileen Veiksaar commuicate with Wynn Rydderech and he <a href="https://scp-wiki.wikidot.com/40-waiting-to-happen" target="_blank">delivers a cryptic message about Ilse Reynders</a> .
+          </c.TimelineEvent>
+          <c.TimelineYear year="2007" />
+          <c.TimelineEvent date="SEP. 8" year="2007" tags={["scp-5243"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the fifth time. Unstable alternate timeline created (Deadline B: The World Wide Web).
+          </c.TimelineEvent>
+          <c.TimelineYear year="2009" />
+          <c.TimelineEvent date="MAY 9" year="2009" tags={["scp-5109"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5109" target="_blank">SCP-5109</a> first encountered.
+          </c.TimelineEvent>
+        </c.TimelineCollapsible>
+        <c.TimelineCollapsible year="2010">
+          <c.TimelineYear year="2011" />
+          <c.TimelineEvent date="SEP. 8" year="2011" tags={["scp-5243"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the ninth time. Unstable alternate timeline created (Deadline C: Next to Nothing).
+          </c.TimelineEvent>
+          <c.TimelineYear year="2012" />
+          <c.TimelineEvent date="SEP. 8" year="2012" tags={["ilse reynders", "tad", "danica azzopardi"]}>
+            Allan McInnis consults the TAD and DTA on whether to let Ilse Reynders talk about baseline to the deadlines. <a href="https://scp-wiki.wikidot.com/47-past-caring" target="_blank">Danica Azzopardi</a> also offers some information.
+          </c.TimelineEvent>
+          <c.TimelineYear year="2013" />
+          <c.TimelineEvent date="SEP. 7" year="2013" tags={["scp-5756"]}>
+            First observation of an annual phenomenon which corrupts objects within a certain Janitorial and Maintenance Section employee storage locker (<a href="https://scp-wiki.wikidot.com/scp-5756" target="_blank">SCP-5756</a>).
+          </c.TimelineEvent>
+          <c.TimelineYear year="2015" />
+          <c.TimelineEvent date="SEP. 8" year="2015" tags={["scp-5243"]}>
+            Dr. A. Zlatá is <a href="https://scp-wiki.wikidot.com/49-repent-at-leisure" target="_blank">killed by SCP-5243.</a>
+          </c.TimelineEvent>
+          <c.TimelineEvent date="DEC. 29" year="2015" tags={["none"]}>
+            <a href="https://scp-wiki.wikidot.com/49-repent-at-leisure" target="_blank">Arik Euler dies.</a>
+          </c.TimelineEvent>
+          <c.TimelineYear year="2016" />
+          <c.TimelineEvent date="SEP. 8" year="2016" tags={["scp-5243"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the fourteenth time. Unstable alternate timeline created. (Deadline D: Wonders of my Hand)
+          </c.TimelineEvent>
+          <c.TimelineYear year="2017" />
+          <c.TimelineEvent date="SEP. 8" year="2017" tags={["scp-5243"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the fifteenth time. Unstable alternate timeline created. (Deadline E: Look Upon my Works)
+          </c.TimelineEvent>
+          <c.TimelineYear year="2019" />
+          <c.TimelineEvent date="SEP. 8" year="2019" tags={["the brothers"]}>
+            SCP-001 <a href="https://scp-wiki.wikidot.com/59-the-foreseeable-future" target="_blank">restored to reality.</a>
+          </c.TimelineEvent>
+        </c.TimelineCollapsible>
+        <c.TimelineCollapsible year="2020">
+          <c.TimelineYear year="2020" />
+          <c.TimelineEvent date="OCT. 23" year="2020" tags={["site 43"]}>
+            <a href="https://scp-wiki.wikidot.com/the-b-b-decommission" target="_blank">Site-43 attacked</a> by the Foundation Elimination Coalition.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="NOV. 23" year="2020" tags={["daniil sokolsky", "placeholder", "scp-5956"]}>
+            Daniil Sokolsky commissions Placeholder to construct the REISNO Cannon (<a href="https://scp-wiki.wikidot.com/scp-5956" target="_blank">SCP-5956</a>) for use with <a href="https://scp-wiki.wikidot.com/the-time-after-time-password-hub" target="_blank">SCP-5109</a>. Placeholder was found to have already been constructing the Cannon under the guidance of his future self.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="DEC. 18-25" year="2020" tags={["site 43"]}>
+            Site-43 <a href="https://scp-wiki.wikidot.com/the-huron-carol" target="_blank">attacked by Are We Cool Yet?</a>
+          </c.TimelineEvent>
+          <c.TimelineYear year="2021" />
+          <c.TimelineEvent date="JAN. 1" year="2021" tags={["site 43", "tatp"]}>
+            Site-43 agents conduct <a href="https://scp-wiki.wikidot.com/the-time-after-time-password-hub" target="_blank">a global sting</a> against GoI moles.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="????" year="2021" tags={["scp-6500"]}>
+            The Impasse (<a href="https://scp-wiki.wikidot.com/scp-6500" target="_blank">SCP-6500</a>) begins.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="JAN. 22" year="2021" tags={["scp-5866"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5866" target="_blank">SCP-5866</a> breaches containment.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="MAR. 30" year="2021" tags={["ilse reynders"]}>
+            <a href="https://scp-wiki.wikidot.com/67-terminal-terminal" target="_blank">Dr. Ilse Reynders</a> escapes confinement and becomes Chair of Acroamatic Abatement.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="SEP. 8" year="2021" tags={["scp-5243", "dougall deering"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5243" target="_blank">SCP-5243</a> recurs for the nineteenth time. Unstable alternate timeline created. (Deadline F: Dead Idiot)
+          </c.TimelineEvent>
+          <c.TimelineYear year="2022" />
+          <c.TimelineEvent date="SEP. 8" year="2022" tags={["dougall deering", "paraline"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-5956" target="_blank">Paraline</a> created due to the negligence of D. Deering.
+          </c.TimelineEvent>
+          <c.TimelineEvent date="DEC. 25" year="2022" tags={["thilo zwist"]}>
+            Thilo Zwist celebrates <a href="https://scp-wiki.wikidot.com/come-home-for-zwistmas" target="_blank">Christmas at Site-43.</a>
+          </c.TimelineEvent>
+        </c.TimelineCollapsible>
+        <c.TimelineCollapsible year="2030">
+          <c.TimelineYear year="2033" />
+          <c.TimelineEvent date="????" year="2033" tags={["none"]}>
+            Project begins into <a href="https://scp-wiki.wikidot.com/placeholder" target="_blank">archetypical anomalies.</a>
+          </c.TimelineEvent>
+          <c.TimelineYear year="2034" />
+          <c.TimelineEvent date="????" year="2034" tags={["ilse reynders", "tad", "placeholder", "scp-5956"]}>
+            Ilse Reynders, Director of the Temporal Anomalies Department, <a href="https://scp-wiki.wikidot.com/cast" target="_blank">contacts Placeholder McDoctorate.</a> She instructs him to reverse engineer <a href="https://scp-wiki.wikidot.com/scp-5956" target="_blank">the REISNO Cannon</a> and then guide his 2020 self in building it, thus completing the causal loop.
+          </c.TimelineEvent>
+        </c.TimelineCollapsible>
+        <c.TimelineCollapsible year="Post-2030">
+          <c.TimelineYear year="Unknown" />
+          <c.TimelineEvent date="????" year="????" tags={["ilse reynders", "tad"]}>
+            <a href="https://scp-wiki.wikidot.com/scp-6500/offset/15" target="_blank">Dr. Ilse Reynders reassigned to the Temporal Anomalies Department</a> and eventually promoted to Director.
+          </c.TimelineEvent>
+        </c.TimelineCollapsible>
+		</>
+	)
+}
