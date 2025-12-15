@@ -5,6 +5,11 @@ main {
   color: black;
 }
 
+.darkMode {
+  background-color: #121212;
+  color: lightgray;
+}
+
 body {
   font-family: sans-serif;
   margin: 0 0 0 auto;
@@ -142,24 +147,7 @@ li.active::before {
   display: none;
 }
 
-#searchContainer {
-  display: none;
-  position: fixed;
-  top: 70px;
-  right: 20px;
-  background-color: inherit;
-  border: 3px solid #BB0011;
-  border-radius: 5px;
-  padding: 10px;
-  z-index: 999;
-  min-width: 50%;
-  width: 80%;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-#searchContainer #searchTagCon, #searchContainer input[type=text]:not(#searchTag), #searchContainer textarea {
+#searchTagCon, input[type=text]:not(#searchTag), textarea {
   background-color: inherit;
   border: 2px solid #BB0011;
   border-radius: 5px;
@@ -167,30 +155,33 @@ li.active::before {
   min-width: 45%;
   margin: 5px 0px;
 }
-#searchContainer input[type=text] {
+
+input[type=text] {
   font-size: 16px;
 }
-#searchContainer input[type=text]:focus {
+input[type=text]:focus {
   outline: none;
 }
-#searchContainer textarea {
+
+textarea {
   text-wrap: wrap;
   resize: none;
   field-sizing: content;
 }
-#searchContainer #searchTagCon {
+
+#searchTagCon {
   margin-bottom: 0px;
   display: block;
   width: 90%;
   text-align: left;
 }
-#searchContainer #searchTagCon input[type=text] {
+#searchTagCon input[type=text] {
   font-size: 16px;
 }
-#searchContainer #searchTagCon input[type=text]:focus {
+#searchTagCon input[type=text]:focus {
   outline: none;
 }
-#searchContainer #searchTagCon #searchTag {
+#searchTagCon #searchTag {
   border: none;
   width: -moz-fit-content;
   width: fit-content;
@@ -198,10 +189,10 @@ li.active::before {
   padding: 5px 3px;
   font-size: 16px;
 }
-#searchContainer #searchTagCon #searchTag:focus {
+#searchTagCon #searchTag:focus {
   outline: none;
 }
-#searchContainer #searchTagCon .tag {
+#searchTagCon .tag {
   display: inline-block;
   background-color: #BB0011;
   color: white;
@@ -211,18 +202,20 @@ li.active::before {
   font-size: 16px;
   cursor: pointer;
 }
-#searchContainer #searchTagCon .tag:hover {
+#searchTagCon .tag:hover {
   filter: brightness(80%);
 }
-#searchContainer #searchTagCon .tag::after {
+#searchTagCon .tag::after {
   content: " X";
   font-weight: bold;
 }
-#searchContainer #searchTagCon:focus, #searchContainer #search:focus {
+
+#searchTagCon:focus, #search:focus {
   outline: none;
   border: 3px solid #BB0011;
 }
-#searchContainer #tagList {
+
+#tagList {
   list-style: none;
   max-height: 200px;
   overflow-y: auto;
@@ -233,7 +226,7 @@ li.active::before {
   display: none;
   width: 90%;
 }
-#searchContainer #tagList button {
+#tagList button {
   background: none;
   color: black;
   font-weight: bold;
@@ -244,7 +237,7 @@ li.active::before {
   cursor: pointer;
   border-bottom: 2px solid #BB0011;
 }
-#searchContainer #tagList button:hover {
+#tagList button:hover {
   background-color: rgba(187, 0, 17, 0.4666666667);
 }
 
