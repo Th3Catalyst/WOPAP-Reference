@@ -30,7 +30,7 @@ export default function Main() {
       <c.Timeline>
         <eras.Pre1960s />
         <eras.From1960to1999 />
-        
+        <eras.Post1999 />
       </c.Timeline>
     </main>  
   );
