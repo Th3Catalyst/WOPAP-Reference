@@ -1,4 +1,4 @@
-import * as c from "@/app/src/components/timeline/index"
+import * as c from "../../components/index"
 
 export default function Post1999() {
 	return (
