@@ -24,7 +24,7 @@ export default function Main() {
         </div>
         <ul id ="tagList"><c.PopulateTags /></ul>
       </c.CollapseMenu>
-      <c.CollapseMenu pos={[20,70]} image="search.png">
+      <c.CollapseMenu pos={[20,70]} image="settings.png">
         <h3 className="font-extrabold text-1xl">Settings</h3>
         <span><input type="checkbox" id="darkModeBox" onClick={()=> {
           document.getElementById("mainContent")?.classList.toggle("darkMode");
