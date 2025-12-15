@@ -9,6 +9,16 @@ export default function tagSearch() {
   const enabledTags = tags;
   console.log(enabledTags);
   for (let i = 0; i < events.length; i++) {
+    let prevElement = (events[i] as HTMLElement).previousElementSibling
+    while (prevElement) {
+      if (prevElement.querySelector("p")) {
+        (prevElement as HTMLElement).style.display = "none";
+        break
+      }
+      prevElement = prevElement.previousElementSibling
+    }
+  }
+  for (let i = 0; i < events.length; i++) {
     const tags = events[i].getAttribute("data-tags");
     if (tags) {
       const tagList = tags.split(',').map(tag => tag.trim().toLowerCase());
@@ -26,14 +36,7 @@ export default function tagSearch() {
         }
       } else {
         events[i].style.display = "none";
-        let prevElement = (events[i] as HTMLElement).previousElementSibling
-        while (prevElement) {
-          if (prevElement.querySelector("p")) {
-            (prevElement as HTMLElement).style.display = "none";
-            break
-          }
-          prevElement = prevElement.previousElementSibling
-        }
+        
       }
     } else {
       events[i].style.display = "none";

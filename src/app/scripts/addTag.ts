@@ -35,6 +35,7 @@ export default function addTag({tag}: AddTagProps) {
         if (tags.length == 0) {
           for (let i = 0; i < events.length; i++) {
             events[i].style.display = "list-item";
+            (events[i].previousElementSibling as HTMLElement).style.display = "list-item";
           }
         }
       });
