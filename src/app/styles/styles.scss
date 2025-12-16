@@ -12,14 +12,16 @@ $dotOffset: -28.5px;
     border-radius:50%;
     position: absolute;
 }
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
 main {
-  background-color: white;
-  color: black;
+  transition: all 0.3s;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
-.darkMode {
-  background-color: #121212;
-  color: lightgray;
-}
+
 
 body {
   font-family: sans-serif;
@@ -132,6 +134,7 @@ li {
   min-width:45%;
   margin: 5px 0px;
 }
+
 input[type="text"] {
   font-size: 16px;
   &:focus {
@@ -143,6 +146,21 @@ textarea {
   resize:none;
   field-sizing: content;
 }
+
+input[type="checkbox"] {
+  border: 0.2em solid var(--primary-color);
+  outline: 0.2em solid $mainRed;
+  width:1em;
+  height:1em;
+  appearance: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  transition: all 0.3s;
+  &:checked {
+    background-color: $mainRed;
+  }
+}
+
 #searchTagCon {
   
   margin-bottom:0px;
@@ -199,7 +217,6 @@ textarea {
   width:90%;
   button {
     background: none;
-    color:black;
     font-weight:bold;
     border: none;
     text-align: left;

@@ -1,7 +1,7 @@
 
 export default function wordSearch(elements: NodeListOf<HTMLElement> | null = null, menu: boolean = false) {
   const events = document.querySelectorAll('[data-tags]') as NodeListOf<HTMLElement>;
-  elements = elements ? elements: document.querySelectorAll('[data-event]') as NodeListOf<HTMLElement>;
+  elements = elements ? elements: events;
   let filter: string | string[]
 
   if (!menu) {
@@ -14,15 +14,24 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
   } else {
     
     const input = document.getElementById("searchTag") as HTMLInputElement;
-    console.log("input", input);
     filter = input.value.toUpperCase().split(',');
     filter = filter[filter.length - 1].trim();
     
   }
+  for (let i = 0; i < events.length; i++) {
+    let prevElement = (events[i] as HTMLElement).previousElementSibling
+    while (prevElement) {
+      if (prevElement.querySelector("p")) {
+        (prevElement as HTMLElement).style.display = "none";
+        break
+      }
+      prevElement = prevElement.previousElementSibling
+    }
+  }
   for (let i = 0; i < elements.length; i++) {
     let txtValue: string | undefined;
     if (!menu) {
-      txtValue = elements[i].querySelector('div')?.querySelector('p')?.textContent || elements[i].querySelector('div')?.querySelector('p')?.innerText;
+      txtValue = elements[i].querySelector('div')?.textContent || elements[i].querySelector('div')?.innerText;
     } else {
       txtValue = elements[i].querySelector('button')?.textContent || elements[i].querySelector('button')?.innerText;
     }
@@ -31,7 +40,15 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
         elements[i].style.display = "list-item";
         if (!menu) {
           (elements[i].parentNode as HTMLElement).style.display = "block";
-          (elements[i].parentNode as HTMLElement).previousElementSibling?.classList.add("active");
+          ((elements[i].parentNode as HTMLElement).previousElementSibling as HTMLElement).classList.add("active");
+          let prevElement = (elements[i] as HTMLElement).previousElementSibling
+          while (prevElement) {
+            if (prevElement.querySelector("p")) {
+              (prevElement as HTMLElement).style.display = "list-item";
+              break
+            }
+            prevElement = prevElement.previousElementSibling
+          }
         }
       } else {
         elements[i].style.display = "none";
