@@ -7,7 +7,6 @@ export default function tagSearch() {
     ((events[i].parentNode as HTMLElement).previousElementSibling as HTMLElement).classList.remove("active");
   }
   const enabledTags = tags;
-  console.log(enabledTags);
   for (let i = 0; i < events.length; i++) {
     let prevElement = (events[i] as HTMLElement).previousElementSibling
     while (prevElement) {

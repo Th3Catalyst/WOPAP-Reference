@@ -51,6 +51,9 @@ export default function Post1999() {
             Allan McInnis consults the TAD and DTA on whether to let Ilse Reynders talk about baseline to the deadlines. <a href="https://scp-wiki.wikidot.com/47-past-caring" target="_blank">Danica Azzopardi</a> also offers some information.
           </c.TimelineEvent>
           <c.TimelineYear year="2013" />
+          <c.TimelineEvent date="JAN. 24" year="2013" tags={["placeholder", "delfina ibanez", "tad", "scp-5243"]}>
+            Delfina Ibanez <a href="https://scp-wiki.wikidot.com/47-past-caring" target="_blank">questions Placeholder</a> about the actions of his alternate self in the deadlines.
+          </c.TimelineEvent>
           <c.TimelineEvent date="SEP. 7" year="2013" tags={["scp-5756"]}>
             First observation of an annual phenomenon which corrupts objects within a certain Janitorial and Maintenance Section employee storage locker (<a href="https://scp-wiki.wikidot.com/scp-5756" target="_blank">SCP-5756</a>).
           </c.TimelineEvent>
@@ -82,8 +85,8 @@ export default function Post1999() {
           <c.TimelineEvent date="NOV. 23" year="2020" tags={["daniil sokolsky", "placeholder", "scp-5956"]}>
             Daniil Sokolsky commissions Placeholder to construct the REISNO Cannon (<a href="https://scp-wiki.wikidot.com/scp-5956" target="_blank">SCP-5956</a>) for use with <a href="https://scp-wiki.wikidot.com/the-time-after-time-password-hub" target="_blank">SCP-5109</a>. Placeholder was found to have already been constructing the Cannon under the guidance of his future self.
           </c.TimelineEvent>
-          <c.TimelineEvent date="DEC. 18-25" year="2020" tags={["site 43"]}>
-            Site-43 <a href="https://scp-wiki.wikidot.com/the-huron-carol" target="_blank">attacked by Are We Cool Yet?</a>
+          <c.TimelineEvent date="DEC. 18" year="2020" tags={["site 43"]}>
+            Site-43 <a href="https://scp-wiki.wikidot.com/the-huron-carol" target="_blank">attacked by Are We Cool Yet?</a> until December 25.
           </c.TimelineEvent>
           <c.TimelineYear year="2021" />
           <c.TimelineEvent date="JAN. 1" year="2021" tags={["site 43", "tatp"]}>
