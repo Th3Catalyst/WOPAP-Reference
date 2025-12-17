@@ -14,7 +14,6 @@ export default function Main() {
     initializeSearch();
   }, []);
   return (
-    
     <main id="mainContent">
       <c.CollapseMenu pos={[20,20]} image="search.png">
         <h3 className="font-extrabold text-1xl">Search</h3>
@@ -28,7 +27,7 @@ export default function Main() {
       <c.CollapseMenu pos={[20,70]} image="settings.png">
         <h3 className="font-extrabold text-1xl">Settings</h3>
         <br />
-        <span><input type="checkbox" id="darkModeBox" onClick={()=> {
+        <span><input type="checkbox" id="darkModeBox" onClick={() => {
           document.documentElement.style.setProperty('--primary-color', (document.getElementById('darkModeBox') as HTMLInputElement)!.checked ? 'black' : 'white');
           document.documentElement.style.setProperty('--secondary-color', (document.getElementById('darkModeBox') as HTMLInputElement)!.checked ? '#888' : 'black');
         }} /> <label htmlFor="darkModeBox">Dark Mode</label></span>
