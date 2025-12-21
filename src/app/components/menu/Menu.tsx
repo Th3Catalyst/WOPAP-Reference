@@ -6,7 +6,7 @@ import tagSearch from "../../scripts/tagSearch";
 export default function Menu() {
     return(
         <>
-          <c.CollapseMenu pos={[20,20]} image="search.png">
+          <c.CollapseMenu pos={[20,20]} image="../../search.png">
           <h3 className="font-extrabold text-1xl">Search</h3>
           <br />
           <input type="text" placeholder="Search..." id="search" onKeyUp={() => {wordSearch()}} />
@@ -15,14 +15,12 @@ export default function Menu() {
           </div>
           <ul id ="tagList"><c.PopulateTags /></ul>
           </c.CollapseMenu>
-          <c.CollapseMenu pos={[20,70]} image="settings.png">
-          <h3 className="font-extrabold text-1xl">Settings</h3>
-          <br />
-          <span><input type="checkbox" id="darkModeBox" onClick={() => {
-                document.documentElement.style.setProperty('--primary-color', (document.getElementById('darkModeBox') as HTMLInputElement)!.checked ? 'black' : 'white');
-                document.documentElement.style.setProperty('--secondary-color', (document.getElementById('darkModeBox') as HTMLInputElement)!.checked ? '#888' : 'black');
-          }} /> <label htmlFor="darkModeBox">Dark Mode</label></span>
-          </c.CollapseMenu>
+          <c.Settings pos={[20,70]} />
+          <button className="fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat top-[120px] right-5" style={{
+            backgroundImage: `url('../../home.png')`
+          }} onClick={() => {
+            window.location.assign(`/?${(new URLSearchParams(window.location.search)).toString()}`);
+          }} /> 
         </>
     )
 }

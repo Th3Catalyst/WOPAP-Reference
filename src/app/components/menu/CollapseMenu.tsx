@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default function CollapseMenu({image, pos, children}: {image: string, pos: number[], children: React.ReactNode}) {
+export default function CollapseMenu({image, pos, width, children}: {image: string, pos: number[], width?: string, children: React.ReactNode}) {
     let enableButton = React.useRef<HTMLButtonElement>(null);
-    const buttonStyles = `fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat`;
+    const buttonStyles = "fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat";
+    const menuStyles = "hidden fixed bg-inherit border-3 border-solid border-[#BB0011] rounded-[4] p-2.5 z-999 text-center items-center flex-col flex-wrap top-5 right-[70px]"
     return (
         <>
             <button ref={enableButton} className={buttonStyles} style={{
@@ -12,7 +13,9 @@ export default function CollapseMenu({image, pos, children}: {image: string, pos
             }} onClick={() => {
                 (enableButton.current)!.nextElementSibling!.classList.toggle("show");
                 }} /> 
-            <div className="hidden fixed bg-inherit border-3 border-solid border-[#BB0011] rounded-[4] p-2.5 z-999 min-w-[50%] w-[80%] text-center items-center flex-col flex-wrap top-5 right-[70px]"  >
+            <div className={menuStyles} style={{
+                width: `${width ? width: "80%"}`
+            }}>
                 { children }
             </div>
         </>
