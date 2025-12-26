@@ -140,6 +140,9 @@ export default function From1960to1999() {
               <c.TimelineEvent date="APR. 4" year="1997" tags={["thilo zwist"]}>
                 <a href="https://scp-wiki.wikidot.com/scp-5382" target="_blank">PoI-382 (Thilo Zwist)</a> officially allies with the SCP Foundation.
               </c.TimelineEvent>
+              <c.TimelineEvent date="DEC. 25" year="1997" tags={["nexus 143", "site 43"]}>
+                <a href="https://scp-wiki.wikidot.com/nx-143" target="_blank">Nexus 143</a> is discovered after a <a href="https://scp-wiki.wikidot.com/7-beyond-repair" target="_blank">particularily romantic Christmas party.</a>
+              </c.TimelineEvent>
             </c.TimelineCollapsible>
         </>
     )
