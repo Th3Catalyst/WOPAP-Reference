@@ -18,11 +18,14 @@ export default function Main() {
     }
   }, []);
   return (
-    <main id="mainContent">
+    <main id="mainContent" className="grid place-content-center h-screen">
       <c.Settings pos={[20,20]} />
-      <a onClick={() => {
-        window.location.assign(`pages/timeline?${(new URLSearchParams(window.location.search)).toString()}`)
-      }}>Timeline</a>
+      <div className="grid justify-items-center">
+        <p className="text-9xl text-[#BB0011] m-[0.5em]">WOPAP REFERENCE</p>
+        <button className="border-black border-4 rounded-4xl text-4xl p-5 bg-white cursor-pointer decoration-0 text-black" onClick={() => {
+            window.location.assign(`pages/timeline?${(new URLSearchParams(window.location.search)).toString()}`)
+        }}>Timeline</button>
+      </div>
     </main>  
   );
 }
