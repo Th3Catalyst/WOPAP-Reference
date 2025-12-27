@@ -1,5 +1,10 @@
-import Pre1960s from "./Pre-1960/Pre-1960s";
-import From1960to1999 from "./1960-1999/1960-1999"
-import Post1999 from "./Post-1999/Post-1999"
+import BASEPre1960s from "./baseline/Pre-1960/Pre-1960s";
+import BASEFrom1960to1999 from "./baseline/1960-1999/1960-1999"
+import BASEPost1999 from "./baseline/Post-1999/Post-1999"
 
-export { Pre1960s, From1960to1999, Post1999 };
+import AAll from "./deadline-a/AAll"
+
+export { 
+    BASEPre1960s, BASEFrom1960to1999, BASEPost1999,
+    AAll
+ };

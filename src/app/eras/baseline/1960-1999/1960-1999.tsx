@@ -1,6 +1,6 @@
-import * as c from "../../components/index"
+import * as c from "../../../components/index"
 
-export default function From1960to1999() {
+export default function BASEFrom1960to1999() {
     return (
         <>
             <c.TimelineCollapsible year="1960">

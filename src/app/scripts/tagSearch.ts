@@ -6,15 +6,18 @@ export default function tagSearch() {
     (events[i].parentNode as HTMLElement).style.display = "none";
     ((events[i].parentNode as HTMLElement).previousElementSibling as HTMLElement).classList.remove("active");
   }
-  const enabledTags = tags;
-  for (let i = 0; i < events.length; i++) {
-    let prevElement = (events[i] as HTMLElement).previousElementSibling
-    while (prevElement) {
-      if (prevElement.querySelector("p")) {
-        (prevElement as HTMLElement).style.display = "none";
-        break
+  const enabledTags: string[] = tags;
+  if (enabledTags.length > 0) {
+    console.log(enabledTags);
+    for (let i = 0; i < events.length; i++) {
+      let prevElement = (events[i] as HTMLElement).previousElementSibling
+      while (prevElement) {
+        if (prevElement.querySelector("p")) {
+          (prevElement as HTMLElement).style.display = "none";
+          break
+        }
+        prevElement = prevElement.previousElementSibling
       }
-      prevElement = prevElement.previousElementSibling
     }
   }
   for (let i = 0; i < events.length; i++) {
@@ -35,7 +38,6 @@ export default function tagSearch() {
         }
       } else {
         events[i].style.display = "none";
-        
       }
     } else {
       events[i].style.display = "none";

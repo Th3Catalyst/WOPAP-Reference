@@ -18,8 +18,8 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
     filter = filter[filter.length - 1].trim();
     
   }
-  for (let i = 0; i < events.length; i++) {
-    let prevElement = (events[i] as HTMLElement).previousElementSibling
+  for (let i = 0; i < elements.length; i++) {
+    let prevElement = (elements[i] as HTMLElement).previousElementSibling
     while (prevElement) {
       if (prevElement.querySelector("p")) {
         (prevElement as HTMLElement).style.display = "none";
@@ -56,10 +56,10 @@ export default function wordSearch(elements: NodeListOf<HTMLElement> | null = nu
     }
   }
   if ((document.getElementById("search") as HTMLInputElement | null)?.value == "" && !menu) {
-    for (let i = 0; i < events.length; i++) {
+    for (let i = 0; i < elements.length; i++) {
       (elements[i].parentNode as HTMLElement).style.display = "none";
       (elements[i].parentNode as HTMLElement).previousElementSibling?.classList.remove("active");
-      events[i].style.display = "list-item";
+      elements[i].style.display = "list-item";
     }
   }
 }
