@@ -4,10 +4,17 @@ import wordSearch from "../../scripts/wordSearch";
 import tagSearch from "../../scripts/tagSearch";
 
 export default function Menu({embed}: {embed?: boolean}) {
+    let stylesHome: Record<string, string>;
     if (embed) {
-        const displayHome: string = "none";
+        stylesHome = {
+            backgroundImage: `url('../../home.png')`,
+            display: "none"
+          };;
     } else {
-        const displayHome: string = "block";
+        stylesHome = {
+            backgroundImage: `url('../../home.png')`,
+            display: "block"
+          };
     }
     return(
         <>
@@ -21,10 +28,7 @@ export default function Menu({embed}: {embed?: boolean}) {
           <ul id ="tagList"><c.PopulateTags /></ul>
           </c.CollapseMenu>
           <c.Settings pos={[20,70]} />
-          <button className="fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat top-[120px] right-5" style={{
-            backgroundImage: `url('../../home.png')`
-            display: displayHome
-          }} onClick={() => {
+          <button className="fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat top-[120px] right-5" style={ stylesHome } onClick={() => {
             window.location.assign(`/?${(new URLSearchParams(window.location.search)).toString()}`);
           }} /> 
         </>
