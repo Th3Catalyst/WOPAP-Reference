@@ -3,7 +3,12 @@ import * as c from "../index";
 import wordSearch from "../../scripts/wordSearch";
 import tagSearch from "../../scripts/tagSearch";
 
-export default function Menu() {
+export default function Menu({embed}: {embed?: boolean}) {
+    if (embed) {
+        const displayHome: string = "none";
+    } else {
+        const displayHome: string = "block";
+    }
     return(
         <>
           <c.CollapseMenu pos={[20,20]} image="../../search.png">
@@ -18,6 +23,7 @@ export default function Menu() {
           <c.Settings pos={[20,70]} />
           <button className="fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat top-[120px] right-5" style={{
             backgroundImage: `url('../../home.png')`
+            display: displayHome
           }} onClick={() => {
             window.location.assign(`/?${(new URLSearchParams(window.location.search)).toString()}`);
           }} /> 
