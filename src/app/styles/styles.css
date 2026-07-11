@@ -7,7 +7,6 @@
 
 main {
   transition: all 0.3s;
-  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
@@ -34,72 +33,12 @@ a:hover {
   text-decoration: underline;
 }
 
-ul:not(#tagList) {
-  list-style: none;
-  margin-left: 80px;
-  padding-left: 15px;
-  margin-top: 0;
-  padding-top: 40px;
-  margin-bottom: 0;
-  padding-bottom: 40px;
-  min-height: 100vw;
-  border-left: 10px solid #BB0011;
-}
-
 li {
   position: relative;
   margin-top: 30px;
 }
 #tagList > li {
   margin-top: 0px;
-}
-li > span {
-  display: inline-block;
-  position: absolute;
-  left: -110px;
-  text-align: right;
-  width: 70px;
-}
-li p {
-  display: inline-block;
-  padding-top: 0;
-  margin-top: 0;
-}
-li p::before {
-  left: calc(-28.5px - 0.175em);
-  top: 0.15em;
-  content: " ";
-  display: inline-block;
-  border: 5px solid #BB0011;
-  background-color: #BB0011;
-  width: calc(15px + 0.35em);
-  height: calc(15px + 0.35em);
-  overflow: hidden;
-  border-radius: 50%;
-  position: absolute;
-}
-li h1 {
-  display: inline-block;
-  color: #990011;
-  padding-top: 0;
-  margin-top: 0;
-}
-li h1::before {
-  left: calc(-28.5px - 0.25em);
-  top: 0.125em;
-  content: " ";
-  display: inline-block;
-  border: 5px solid #BB0011;
-  background-color: #BB0011;
-  width: calc(15px + 0.5em);
-  height: calc(15px + 0.5em);
-  overflow: hidden;
-  border-radius: 50%;
-  position: absolute;
-}
-li h3 {
-  display: none;
-  position: absolute;
 }
 li.collapsible::before {
   content: "► ";
@@ -111,34 +50,6 @@ li.collapsible::before {
 }
 li.collapsible:hover {
   cursor: pointer;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-li div {
-  display: inline-block;
-}
-li div::before {
-  content: " ";
-  display: inline-block;
-  border: 5px solid #BB0011;
-  background-color: #BB0011;
-  width: calc(15px + 0.25em);
-  height: calc(15px + 0.25em);
-  overflow: hidden;
-  border-radius: 50%;
-  position: absolute;
-  left: calc(-28.5px - 0.0625em);
-}
-li div h3 {
-  padding-top: 0;
-  margin-top: 0;
-  padding-bottom: 2px;
-  margin-bottom: 2px;
-}
-li div p {
-  display: inline-block;
-  margin-top: 0;
-  min-height: 3em;
 }
 li.active::before {
   content: "▼";

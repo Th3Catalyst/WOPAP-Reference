@@ -3,9 +3,6 @@ import {useEffect} from "react";
 import Collapsible from "../../scripts/collapsible";
 import initializeSearch from "../../scripts/main";
 
-import * as c from "../../components/index";
-import * as eras from "./eras/index";
-
 import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
 
 export default function Main() {
@@ -33,12 +30,6 @@ export default function Main() {
   }, []);
   return (
     <main id="mainContent" style={{backgroundColor: themeColor}}>
-      <c.Menu />
-      <c.Timeline>
-        <eras.Pre1960s />
-        <eras.From1960to1999 />
-        <eras.Post1999 />
-      </c.Timeline>
     </main>  
   );
 }

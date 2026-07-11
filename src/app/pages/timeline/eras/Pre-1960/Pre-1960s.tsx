@@ -1,4 +1,4 @@
-import * as c from '../../components/index';
+import * as c from '../../../../components/index';
 
 export default function Pre1960s() {
     return (

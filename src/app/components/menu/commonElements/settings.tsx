@@ -8,8 +8,6 @@ export default function Settings({pos}: {pos: number[]}) {
                 <br />
                 <span><input type="checkbox" id="darkModeBox" onClick={() => {
                     const isChecked: boolean = (document.getElementById('darkModeBox') as HTMLInputElement)!.checked;
-                    document.documentElement.style.setProperty('--primary-color', (isChecked ? 'black' : 'white'));
-                    document.documentElement.style.setProperty('--secondary-color', (isChecked ? '#888' : 'black'));
                     window.location.assign(`${document.URL.split('?')[0]}?theme=${(isChecked ? 'dark' : 'light')}`)
                 }} /> <label htmlFor="darkModeBox">Dark Mode</label></span>
             </c.CollapseMenu>

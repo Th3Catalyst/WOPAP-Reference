@@ -16,12 +16,11 @@ $dotOffset: -28.5px;
   --primary-color: white;
   --secondary-color: black;
 }
+
 main {
   transition: all 0.3s;
-  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-
 
 body {
   font-family: sans-serif;
@@ -43,51 +42,11 @@ a {
     text-decoration:underline;
   }
 }
-ul:not(#tagList) {
-  list-style: none;
-  margin-left:80px;
-  padding-left:15px;
-  margin-top:0;
-  padding-top:40px;
-  margin-bottom:0;
-  padding-bottom:40px;
-  min-height:100vw;
-  border-left:10px solid $mainRed;
-}
 li {
-  position:relative;
+  position: relative;
   margin-top:30px;
   #tagList > & {
     margin-top: 0px;
-  }
-  > span {
-    display:inline-block;
-    position:absolute;
-    left:-110px;
-    text-align:right;
-    width: 70px;
-  }
-  p {
-    display:inline-block;
-    padding-top:0; margin-top:0;
-    &::before {
-        left: calc($dotOffset - 0.175em);
-        top: 0.15em;
-        @include bulletpoint(calc(15px + 0.35em));
-    }
-  }
-  h1 {
-    display:inline-block; 
-    color:#990011;
-    padding-top:0; margin-top:0;
-    &::before {
-        left: calc($dotOffset - 0.25em);
-        top: 0.125em;
-        @include bulletpoint(calc(15px + 0.5em));
-    }
-  }
-  h3 {
-    display:none; position:absolute;
   }
   &.collapsible::before {
     content:"► ";
@@ -99,23 +58,6 @@ li {
   }
   &.collapsible:hover {
     cursor: pointer;
-    width: fit-content;
-  }
-  div {
-    &::before {
-        @include bulletpoint(calc(15px + 0.25em));
-        left:calc($dotOffset - 0.0625em);
-    }
-    display:inline-block;
-    h3 { 
-        padding-top:0; margin-top:0;
-        padding-bottom:2px; margin-bottom:2px;
-    }
-    p {
-        display:inline-block; 
-        margin-top:0;
-        min-height:3em;
-    }
   }
   &.active::before {
     content: "▼";
