@@ -27,9 +27,8 @@ export default function Menu({embed}: {embed?: boolean}) {
           </div>
           <ul id ="tagList"><c.PopulateTags /></ul>
           </c.CollapseMenu>
-          <c.Settings pos={[20,70]} />
-          <button className="fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat top-[120px] right-5" style={ stylesHome } onClick={() => {
-            window.location.assign(`/?${(new URLSearchParams(window.location.search)).toString()}`);
+          <button className="fixed w-10 h-10  border-[3px] border-solid border-[#BB0011] rounded-[4] cursor-pointer z-1000 bg-cover bg-center bg-no-repeat top-[70px] right-5" style={ stylesHome } onClick={() => {
+            window.location.assign(`/`);
           }} /> 
         </>
     )

@@ -13,8 +13,8 @@ $dotOffset: -28.5px;
     position: absolute;
 }
 :root {
-  --primary-color: white;
-  --secondary-color: black;
+  --primary-color: var(--background);
+  --secondary-color: var(--foreground);
 }
 
 main {
@@ -26,6 +26,7 @@ body {
   font-family: sans-serif;
   margin: 0 0 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -35,6 +36,7 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
 }
+
 a { 
   text-decoration:none;
   color:$mainRed;
@@ -42,7 +44,8 @@ a {
     text-decoration:underline;
   }
 }
-li {
+
+#timeline li {
   position: relative;
   margin-top:30px;
   #tagList > & {

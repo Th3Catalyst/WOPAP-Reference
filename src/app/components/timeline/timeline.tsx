@@ -70,6 +70,6 @@ export function TimelineEvent( { date, year, tags, children }: TimelineEventProp
 
 export default function Timeline({ children }: React.PropsWithChildren<unknown>) {
     return (
-        <ul className="list-none my-0 ml-20 py-10 pl-4 min-h-[100vw] border-l-10 border-l-[#BB0011]">{ children }</ul>
+        <ul id="timeline" className="list-none my-0 ml-20 py-10 pl-4 min-h-[100vw] border-l-10 border-l-[#BB0011]">{ children }</ul>
     );
 }

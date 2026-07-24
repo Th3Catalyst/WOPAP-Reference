@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap");
 :root {
-  --primary-color: white;
-  --secondary-color: black;
+  --primary-color: var(--background);
+  --secondary-color: var(--foreground);
 }
 
 main {
@@ -33,14 +33,14 @@ a:hover {
   text-decoration: underline;
 }
 
-li {
+#timeline li {
   position: relative;
   margin-top: 30px;
 }
-#tagList > li {
+#tagList > #timeline li {
   margin-top: 0px;
 }
-li.collapsible::before {
+#timeline li.collapsible::before {
   content: "► ";
   font-family: "Times New Roman";
   display: inline-block;
@@ -48,10 +48,10 @@ li.collapsible::before {
   position: absolute;
   left: -100px;
 }
-li.collapsible:hover {
+#timeline li.collapsible:hover {
   cursor: pointer;
 }
-li.active::before {
+#timeline li.active::before {
   content: "▼";
 }
 
